@@ -179,13 +179,23 @@ body.frame {
 	perspective: 50px;
 	transform-origin: 50% 50% 0;
 }
-div.absolute, div.shape, #veilframe {
+div.absolute, div.shape {
 	position: absolute;
 	top: 0; left: 0;
-	vertical-align: top;
+	/*vertical-align: top;*/
+	transform: translateZ(0,0,0);
 	perspective: 50px;
 	transform-origin: 50% 50% 0;
 }
+div.hovershape {
+	min-width: 20vmin;
+	min-height: 20vmin;
+	transition: color 3s, opacity 2s, transform 2s;
+}
+div.hovershape.circle {
+	border-radius: 10vmin;
+}
+
 .frame, #svgframe, #divframe, #wordframe, #subtextframe {
 	position: fixed;
 	top: 0; left: 0;
@@ -215,8 +225,8 @@ div.absolute, div.shape, #veilframe {
 #contentframe {
 	z-index: var(--zhighest);
 }
-#veilframe {
-	z-index: var(--zhighest);
+.hovershape {
+	z-index: var(--zhigh);
 }
 #contentframe {
 	position: absolute;
