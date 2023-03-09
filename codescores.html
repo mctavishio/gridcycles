@@ -45,7 +45,7 @@
 		.grid_absolute_4x4_square  > div.griditem:nth-child(2n+1) {
 			background-color: var(--warmblack);
 		}
-		#subtextframe > div.shape {
+		#wordframe > div.shape {
 			font-family: var(--monospace_zerodot);
 			font-size: 40vmin;
 			transition: color 1s, opacity 2s, transform 1s;
@@ -129,7 +129,7 @@
 </div> 
 
 <div id="subtextframe" aria-hidden="true">
-	<div class="shape">x</div>
+	
 	<div class="tcontainer">
 		<div class="tickermove">
 			<div class="tickerwrap">
@@ -153,7 +153,9 @@
 		</div>
 	</div>
 </div> <!-- end of subtext frame -->
-
+<div id="wordframe" aria-hidden="true">
+	<div class="shape">x</div>
+</div>
 <div id="contentframe" aria-hidden="true">
 
 <main id="main">
